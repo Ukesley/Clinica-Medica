@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:  'Source Sans Pro';
+}
+
+/* TOPO */
+
+header {
+    background-color: #00CAD1;
+}
+
+nav {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav img {
+    width: 130px;
+    padding-left: 10px;
+}
+
+.link-topo li{
+    display: inline;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.link-topo li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-topo li a:hover {
+    color: #636363;
+    ;
+}
+
+/* CONTEÚDO */
+
+section {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    color: #636363;
+}
+
+.nav-conteudo {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.link-conteudo {
+    display: flex;
+}
+
+.link-conteudo li a {
+    margin: 0 10px;
+    color: #636363;
+    text-decoration: none;
+    border-bottom: 2px solid #00CAD1;
+}
+
+.secao-topo h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    color: #636363;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.texto h4 {
+    padding-top: 20px;
+}
+
+.texto p {
+    padding-top: 20px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.tabela-conteudo {
+    margin:20px ;
+    display: flex;
+    justify-content: start;
+}
+
+.tabela-conteudo img {
+    width: 300px;
+}
+
+table {
+    box-sizing: border-box;
+    text-align: justify;
+    border-spacing: 0;
+   
+}
+
+tr th{
+    padding: 10px 160px 10px 10px;
+    background-color: #00CAD1;
+    color: #fff;
+    border: 0px;
+}
+
+tr td {
+    padding-left: 10px ;
+    border: 0px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F1F1F1;
+    
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #CDCDCD;
+    
+}
+
+/* FOOTER */
+
+footer {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C6E71;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer p {
+    color: #fff;
+    line-height: 30px;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 425px) and (min-width: 320px){
+
+    nav {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 12px;
+    }
+    nav img {
+        width: 100px;
+    }
+
+    .link-topo {
+    border-top: 1px solid #0C6E71;
+    padding: 10px 15px;
+    }
+
+    .link-topo li {
+        font-size: 15px;
+    }
+
+    .link-conteudo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .tabela-conteudo img {
+        display: none;
+    }
+
+    table {
+        width: 100%;
+    }
+}
