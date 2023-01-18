@@ -69,6 +69,10 @@ section {
     border-bottom: 2px solid #00CAD1;
 }
 
+.link-conteudo li a:hover {
+    color: #02abba;
+}
+
 .secao-topo h3 {
     font-size: 20px;
     margin-bottom: 20px;
@@ -90,43 +94,47 @@ section {
     font-size: 17px;
 }
 
+.tabela {
+    margin-bottom: 30px;
+}
+
 .tabela-conteudo {
-    margin:20px ;
-    display: flex;
-    justify-content: start;
+  display: flex;
+  height: 240px;
+  padding: 0 20px;
 }
 
 .tabela-conteudo img {
-    width: 300px;
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
 }
 
 table {
-    box-sizing: border-box;
-    text-align: justify;
-    border-spacing: 0;
-   
+  border-spacing: 0;
+  text-align: left;
+  width: 70%;
+  height: 100%;
 }
 
-tr th{
-    padding: 10px 160px 10px 10px;
-    background-color: #00CAD1;
-    color: #fff;
-    border: 0px;
+table thead tr {
+  background-color: #00cad1;
+  color: #fff;
 }
 
-tr td {
-    padding-left: 10px ;
-    border: 0px;
+table tr {
+  background-color: #f1f1f1;
+  color: #585757;
+  font-weight: 500;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #F1F1F1;
-    
+table tbody tr:nth-of-type(2n+1) {
+  background-color: #cdcdcd;
+  border: 1px solid #f1f1f1;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #CDCDCD;
-    
+table th, table td  {
+  padding: 10px;
 }
 
 /* FOOTER */
@@ -151,7 +159,7 @@ footer p {
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 425px) and (min-width: 320px){
+@media (max-width: 768px) {
 
     nav {
         display: flex;
@@ -163,7 +171,7 @@ footer p {
     }
 
     .link-topo {
-    border-top: 1px solid #0C6E71;
+    border-top: 1px solid #02abba;
     padding: 10px 15px;
     }
 
@@ -177,11 +185,30 @@ footer p {
         justify-content: center;
     }
 
-    .tabela-conteudo img {
-        display: none;
+    .link-conteudo li {
+        padding-top: 10px;
     }
 
-    table {
-        width: 100%;
+    .tabela-conteudo {
+        margin-top: 15px;
     }
+
+     .tabela-conteudo img {
+         display: none;
+     }
+
+     table {
+       width: 100%;
+     }
+
+     .tabela-conteudo {
+       height: auto;
+         justify-content: center;
+     }
+}
+
+@media ( max-width: 425px) {
+  .tabela-conteudo {
+    padding: 0;
+  }
 }
