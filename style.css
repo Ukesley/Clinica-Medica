@@ -9,20 +9,21 @@ body {
 
 /* TOPO */
 
-header {
+.nav-topo {
+    width: 100%;
+    position: fixed;
     background-color: #00CAD1;
 }
 
-nav {
+.topo {
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
 }
 
-nav img {
+.topo img {
     width: 150px;
     padding-left: 10px;
 }
