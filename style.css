@@ -193,21 +193,20 @@ footer p {
         margin: 0 10px;
     }
 
-    nav {
+    .topo {
         display: flex;
         flex-flow: column wrap;
-        font-size: 12px;
     }
-    nav img {
+    .topo img {
         width: 100px;
     }
 
     .link-topo {
     border-top: 1px solid #02abba;
-    padding: 10px 15px;
+    padding-bottom: 10px;
     }
 
-    .link-topo li {
+    .link-topo li a{
         font-size: 15px;
     }
 
@@ -238,14 +237,26 @@ footer p {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 427px) {
 
-    nav img {
+    .topo {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .topo img {
         width: 130px;
     }
 
+    .link-topo {
+        padding-bottom: 20px;
+        border-top: 1px solid #02abba;
+    }
+
     .link-topo li {
-        font-size: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 18px;
     }
 
     .banner {
